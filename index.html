@@ -14,6 +14,7 @@
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
   <title>Shri Ganesh Enterprises</title>
+  <link rel="stylesheet" href="./styles.css">
   <!-- <link rel="stylesheet" href="./output.css"> -->
   <style>
     .example::-webkit-scrollbar {
@@ -434,12 +435,37 @@
             </button>
           </div>
         </div>
-        <div class="w-full lg:w-6/12 px-4">
+        <div class="w-full lg:w-6/12">
           <div class="flex flex-wrap items-top mb-6">
-            <div class="w-full lg:w-6/12 ml-auto">
+            <!-- <div class="w-full lg:w-6/12 ml-auto">
               <span
                 class="block uppercase text-gray-600 text-sm font-semibold mb-2"
                 style="margin-top: 10px">Get in touch</span>
+              <ul class="list-unstyled">
+                <li>
+                  Prop. Prabhakar Ranmale
+                  <a href="tel:9765559801"
+                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm">+91
+                    9765559801</a>
+                </li>
+                <li>
+                  Email
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="mailto:prabhakarranmale@gmail.com">prabhakarranmale@gmail.com</a>
+                </li>
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="https://www.creative-tim.com/bootstrap-themes/free"></a>
+                </li>
+              </ul>
+            </div> -->
+            <div class="w-full lg:w-4/12 px-4 ml-auto">
+              <iframe style="margin-top: 20px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30019.792695226144!2d73.64125021083984!3d19.862193499999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdd93685e5b6a6f%3A0xfab8733484f458da!2sShri%20Ganesh%20Enterprises!5e0!3m2!1sen!2sin!4v1712246011903!5m2!1sen!2sin" width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="w-full lg:w-4/12 px-4">
+              <span
+                class="block uppercase text-gray-600 text-sm font-semibold mb-2"
+                style="margin-top: 20px">Get in touch</span>
               <ul class="list-unstyled">
                 <li>
                   Prop. Prabhakar Ranmale
@@ -485,6 +511,14 @@
     duration: 1200,
     once: false,
   });
+
+  const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(faqItem => {
+  faqItem.addEventListener('click', () => {
+    faqItem.classList.toggle('active');
+  });
+});
 </script>
 
 </html>
